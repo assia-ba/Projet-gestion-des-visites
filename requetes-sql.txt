@@ -1,0 +1,20 @@
+#------Pour la table services--------------------------#
+INSERT INTO visite.services(`Service`, `Division`)
+select `المصلحة`, `القسم` 
+FROM oldvisites.services
+
+#------Pour la table communes--------------------------#
+INSERT INTO visite.communes(`pays`, `province`, `commune`, `cercle`, `caidat`, `domaine` )
+select `البلد`, `العمالة` ,`الجماعة`,`الدائرة`, `القيادة` ,`المجال`
+FROM oldvisites.communes
+
+#------Pour la table visiteurs--------------------------#
+INSERT INTO visite.visiteurs(`CIN`, `NomComplet`, `Adresse`) 
+select`بطاقة التعريف`, `الاسم الكامل` ,`العنوان` 
+FROM oldvisites.visiteurs
+
+#------Pour la table visites--------------------------#
+INSERT INTO `visites`( `CIN`, `Date`, `Nature`, `Sujet`, `ID_commune`, `ID_service`, `Observations`)
+select   oc.`بطاقة التعريف`,  ov.`التاريخ`, ov.`نوع الزيارة`, ov.`الموضوع`, c.`ID_commune`, s.`ID_service`, ov.`الملاحظات` 
+FROM  visite.communes c, oldvisites.visiteurs oc, oldvisites.visites ov, visite.services s
+where c.commune=oc.`الجماعة` and oc.`بطاقة التعريف`=ov.`بطاقة النعريف` and s.Service=ov.`المصلحة`

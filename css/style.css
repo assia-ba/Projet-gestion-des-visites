@@ -1,0 +1,350 @@
+/*html, body{
+  height: 100%;
+}*/
+
+
+
+input, select {
+  width: auto;
+  padding: 12px 50px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius:10px;
+}
+
+input:focus {
+  border: 3px solid #aecff8;
+}
+
+textarea{
+  width: auto;
+  padding: 12px 50px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius:10px;
+}
+
+textarea:focus {
+  border: 3px solid #aecff8;
+}
+body{
+  max-width: 1000px;
+  margin: 15px;
+  padding: 15px;
+  word-wrap: break-word;
+  background-color: #aecff8 ;
+  background-attachment: scroll;
+  background-size: cover;
+  background-blend-mode:darken;
+  color :rgb(22, 21, 21);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:20px;
+  line-height: 1.4;
+}
+
+h3 {
+  color:#aecff8 ;
+  font-family:sans-serif;
+  font-size: 25px;
+}
+h1 {
+  color:white; ;
+  font-family:sans-serif;
+}
+.frm{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:25px !important;
+    margin-right:30%;
+    padding:1px 16px;
+   width:100%;
+   color:rgb(22, 29, 29);
+}
+
+
+.vertical-menu {
+  width: 18%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  height: 100%;
+  overflow:auto;
+  
+  
+  }
+  
+.vertical-menu a, .vertical-menu img  {
+  border:#aecff8;
+  border-radius:10px;
+  background-color:#FFFFFF;
+  color: black; 
+  display:block; 
+  padding: 25px; 
+  text-decoration: none;
+  }
+ 
+   a:hover {
+    background-color: #aecff8;
+    color: black;
+  }
+  .vertical-menu a:active {
+    background-color: #aecff8 !important;
+    color: black;
+    
+  }
+   
+  
+  #cin-list{float:left;list-style:none;margin-top:-8px;padding:0;position: absolute;z-index: 1;width:16%;}
+  #cin-list li{padding: 10px; background: #f6f8fa; border-bottom: #bbb9b9 1px solid;}
+  #cin-list li:hover{background:#5897fb;cursor: pointer;}
+
+
+  #container{
+    width: 600px;
+    margin:0 auto;
+    margin-top:20%;
+    margin-left:35%;
+}
+
+
+
+#container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+input[type=submit], input[type=reset]{
+    background-color: #5d9ff0;
+    color: black;
+    padding: 15px 20px;
+    margin: 8px 10px;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    font-size:20px;
+
+}
+input[type=submit]:hover, input[type=reset]:hover {
+  opacity: 0.8;
+}
+
+
+
+button {
+  background-color: #5d9ff0;
+  color: black;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  }
+
+  button:hover {
+  opacity: 0.8;
+  }
+  .cancelbtn {
+  width: 15%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  background-color: #f86f65;
+  }
+  .container {
+  padding: 16px;
+  }
+
+  .modal {
+  display:none ;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+  padding-left: 60px;
+  }
+
+  .modal-content {
+
+  background-color: #FFFFFF;
+  margin: 10%  30%; 
+  border: 1px solid #888;
+  width: 50%; 
+  }
+
+
+  .close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+  color: red;
+  cursor: pointer;
+  }
+
+.table tr {
+  width:100% !important;
+      font-family: sans-serif;
+      padding: 5px;
+      text-align: center;
+      }
+.table td {
+  width:25% !important;
+    font-family: sans-serif;
+    padding: 5px;
+    text-align: center;
+    }
+
+input[type=radio],
+input.radio {
+  margin:0px 10px;
+  width: auto;
+}
+
+select{
+  width: 60%;
+}
+
+input[type=date],
+input.date {
+  width: 85%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  }
+ 
+
+.fieldset{
+  margin:10px;
+  border:none;
+  background-color:#FFFFFF;
+  border-radius:10px;
+  padding:20px;
+  width: 100%; 
+  font-size:25px !important;
+}
+ legend{
+    font-family:verdana, arial, sans-serif;
+    font-size:14pt;
+    font-weight:bold;
+    color:#FFFFFF;
+    margin:10px;
+    padding:10px 20px 10px 20px;
+    background-color:#aecff8;
+    border-radius:4px;
+    text-align: center;
+ }
+ caption{
+  font-family:verdana, arial, sans-serif;
+  font-size:14pt;
+  font-weight:bold;
+  color:#aecff8;
+  margin:10px;
+  background-color:#FFFFFF;
+  border-radius:4px;
+}
+
+/*.tab{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:25px;
+  margin-right:30%;
+  padding:1px 16px;
+  width:100%;
+  color:rgb(22, 29, 29);
+  border: medium solid #6495ed;
+  border-collapse: collapse;
+  
+ 
+  background-color: #ffffff;
+  
+}
+th {
+  font-family: monospace;
+  border: thin solid #6495ed;
+  padding: 5px;
+  background-color: #D0E3FA;
+  
+  }*/
+
+  
+.tab {
+  margin-right:30%;
+  font-size:20px;
+  color:#333333;width:100%;
+  border-width: 1px;
+  border-color: #729ea5;
+  border-collapse: collapse;
+  width: 1070px;
+  text-align: center;
+}
+.tab th {
+  font-size:20px;
+  background-color:#acc8cc;
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #729ea5;
+  text-align:center;
+}
+.tab tr {
+  background-color:#d4e3e5;
+}
+.tab td {
+  font-size:15px;
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #729ea5;
+}
+.tab tr:hover {
+  background-color:#ffffff;
+}
+
+.frm-recherche{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:25px !important;
+  margin-right:30%;
+  padding:1px 16px;
+  width:100%;
+  color:rgb(22, 29, 29);
+}
+.form-recherche td, .form-modification td{
+  font-size: 25px !important;
+}
+.form-recherche tr {
+  width:100% !important;
+      font-family: sans-serif;
+      padding: 5px;
+      text-align: center;
+      }
+.form-recherche td {
+  width:25% !important;
+    font-family: sans-serif;
+    padding: 5px;
+    text-align: center;
+    }
+

@@ -1,0 +1,3 @@
+#commune-list{float:left;list-style:none;margin-top:115px;margin-right:60px;padding:0;position:absolute;z-index: 1 !important;width:17%;}
+#commune-list li{padding: 10px; background: #f6f8fa; border-bottom: #bbb9b9 1px solid;}
+#commune-list li:hover{background:#5897fb;cursor: pointer;}

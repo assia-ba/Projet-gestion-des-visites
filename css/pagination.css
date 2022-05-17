@@ -1,0 +1,29 @@
+
+table {  
+    border-collapse: collapse;  
+}  
+    .inline{     
+        float:right;
+       
+    }   
+     
+    
+
+
+.pagination a {   
+    font-weight:bold;   
+    font-size:18px;   
+    color: black;   
+    float: left;   
+    padding: 8px 16px;   
+    text-decoration: none;   
+    border:1px solid black;  
+    border-radius: 15px; 
+    background-color: #d4e3e5;
+}   
+.pagination a.active {   
+        background-color: #5d9ff0;  
+}   
+.pagination a:hover:not(.active) {   
+    background-color: skyblue;   
+}   
